@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    
+    
+    <script  src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="typingtest.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class = "speedTypingTest container-fluid p-5 d-flex flex-row justify-content-center">
+        <div class="row d-flex flex-row justify-content-center" id = "typingTestContainer">
+            <div>
+                <div  class = "text-center">
+                    <h1 class="heading">Speed Typing Test</h1>
+                </div>
+                
+                
+                <div class="ml-auto d-flex flex-row justify-content-center">
+                    <div class = "time-container d-flex flex-column justify-content-center" id = "timeContainer">
+                        
+                        <p class = "accuracy" id = "Text"><span id = "minutesTime" class = "mr-1">00</span>:<span id = "secondsTime"class ="ml-1">00</span></p>
+                    </div>
+                    
+                    <div class = "accuracy-container" id = "accuracyContainer">
+                        <p class = "box-text">Accuracy</p>
+                        <p class = "accuracy"><span class = "acc-percentage mr-1"  id = "accuracyText">0</span>%</p>
+                    </div>
+                    <div class = "speed-container" id = "speedContainer">
+                        <p class = "box-text">words/min</p>
+                        <p class = "speed"><span class = "speed-num mr-1"  id = "speedText">0</span>wpm</p>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="timersContainer d-flex flex-row justify-content-center">
+                    <button class = "timer" id = "typeTimer1">
+                        1 minute
+                    </button>
+                    <button class = "timer" id = "typeTimer2">
+                        2 minutes
+                    </button>
+                    <button class = "timer" id ="typeTimer5">
+                        5 minutes
+                    </button>
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="typingtext-container justify-content-center">
+                    <div class="text-para ml-5 mr-5" >
+                        <p  id = "quoteDisplay" >Messes of men in farmer poverty; not much for monks but we pretend to be. Share a silent meal and a pot of chamomile, gypsies like us should be stamped in solidarity. </p>
+                    </div>
+                    
+                    <div class = "d-flex flex-row justify-content-center">
+                        <textarea class="textarea-input mt-4" rows = "9" cols = "40" id = "quoteInput" ></textarea>
+                    </div>
+                </div>
+                <div class = "d-flex flex-row justify-content-center pt-3">
+                    
+                    <p id = "result" ></p>
+    
+                    <div class="d-flex flex-row">
+                        <button id = "startBtn" class = "btn start-button">Start</button>
+                        <button id = "submitBtn" class="btn submit-button" >Submit</button>
+                        <button id = "resetBtn" class=" ml-3 btn reset-button">Reset</button>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            
+        </div>
+
+    </div>
+</body>
+<script src = "typingtest.js" defer>
+    
+    
+</script>
+</html>
